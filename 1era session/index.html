@@ -1,0 +1,2635 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<!-- 2017-01-14 sáb 01:32 -->
+<meta  charset="utf-8" />
+<meta  htto-equiv="X-UA-Compatible" content="chrome=1" />
+<meta  name="generator" content="Org-mode with org-ioslide" />
+<meta  name="author" content="Albert Castellano Moreno" />
+
+
+<!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
+<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--This one seems to work all the time, but really small on ipad-->
+<!--<meta name="viewport" content="initial-scale=0.4">-->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<link rel="stylesheet" media="all" href="theme/css/default.css" />
+<link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css" />
+<link rel="stylesheet" media="all" href="theme/css/small-icon.css" />
+<base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
+<script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+
+   <script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
+
+<script src="js/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML,local/local" type="text/javascript"></script>
+</head>
+<body style="opacity: 0">
+<slides class="layout-widescreen">
+<slide class="title-slide segue nobackground">
+       <aside class="gdbar"><img src="images/elixir.png"></aside>
+       <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+       <hgroup class="auto-fadein">
+         <h1 data-config-title><!-- populated from slide_config.json --></h1>
+         <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+         <p data-config-presenter><!-- populated from slide_config.json --></p>
+       </hgroup>
+    </slide>
+  
+<slide id="sec-" class=" segue dark quote nobackground" style="background-image: url(nil)">
+<aside class="gdbar right bottom"><img src="images/elixir.png"></aside><hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline3" class="outline-2">
+<h2 id="orgheadline3">Amiguito. Quién eres?</h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="flexbox vleft auto-fadein" id="text-">
+
+
+</article>
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline1" class="outline-3">
+<h3 id="orgheadline1"></h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<article class="flexbox vcenter">
+
+<div class="figure">
+<p><img src="images/me.png" alt="me.png" width="300px" />
+</p>
+</div>
+</article>
+
+
+</article>
+
+</slide>
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline2" class="outline-3">
+<h3 id="orgheadline2"></h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<p>
+Formación:
+</p>
+<ul>
+<li>Ingeniería Mecánica - Universidad Nacional de Ingeniería - Finalizando el 2017-1</li>
+<li>Programacion: Autodidacta (php, python, ruby, prolog, clojure, elixir ♥)</li>
+</ul>
+<p>
+Experiencia Laboral:
+</p>
+<ul>
+<li>Trabajos Freelancer con Symfony (framework php) - 2012</li>
+<li>Organización de Eventos Nacionales e Internacionales ASME</li>
+<li>Webmaster y Program Chair en Junta Estudiantil LatinAmerica ASME</li>
+<li>Webmaster y Vice-Chair en SEASME</li>
+<li>Trabajos Freelancer Elixir y Phoenix para Termochilca y Enel</li>
+<li><a href="https://www.facebook.com/makerlabperu/">Makerlab</a> ♥</li>
+<li>Practicante Pre-profesional en Control System Integration</li>
+</ul>
+
+
+</article>
+
+</slide>
+
+</slide>
+
+</slide>
+<slide id="sec-" class=" segue dark quote nobackground" style="background-image: url(nil)">
+<aside class="gdbar right bottom"><img src="images/elixir.png"></aside><hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline5" class="outline-2">
+<h2 id="orgheadline5">Objetivo</h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="flexbox vleft auto-fadein" id="text-">
+
+
+</article>
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline4" class="outline-3">
+<h3 id="orgheadline4"></h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<ul>
+<li>Investigación y proyectos en las siguiente areas:
+<ul>
+<li>Cloud computing</li>
+<li>Sistemas embebidos</li>
+<li>Machine learning</li>
+</ul></li>
+</ul>
+<p>
+-Formar comunidad Elixir Perú
+</p>
+
+<ul>
+<li>Piensen en algun proyecto que quieran hacer.</li>
+</ul>
+
+
+</article>
+
+</slide>
+
+</slide>
+
+</slide>
+<slide id="sec-" class=" segue dark quote nobackground" style="background-image: url(nil)">
+<aside class="gdbar right bottom"><img src="images/elixir.png"></aside><hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline17" class="outline-2">
+<h2 id="orgheadline17">Introducción</h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="flexbox vleft auto-fadein" id="text-">
+
+
+</article>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline6" class="outline-3">
+<h3 id="orgheadline6">Tecnología Actual (Opinión Personal)</h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<article class="flexbox vcenter">
+
+<div class="figure">
+<p><img src="images/actual.jpg" alt="actual.jpg" width="400px" />
+</p>
+</div>
+</article>
+
+
+</article>
+
+</slide>
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline7" class="outline-3">
+<h3 id="orgheadline7"></h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="smaller" id="text-">
+<article class="flexbox vcenter">
+
+<div class="figure">
+<p><img src="images/recursion_in_c.gif" alt="recursion_in_c.gif" width="700px" />
+</p>
+</div>
+</article>
+<p>
+Recurrencia, recursión o recursividad es la forma en la cual se especifica un proceso basado en su propia definición &#x2013;Wikipedia.
+</p>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline8" class="outline-3">
+<h3 id="orgheadline8"></h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<p>
+<a href="https://youtu.be/q8wueg2hswA?t=57m22s">Dangerous</a>
+</p>
+<article class="flexbox vcenter">
+
+<div class="figure">
+<p><img src="images/dangerous.png" alt="dangerous.png" width="500px" />
+</p>
+</div>
+</article>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline9" class="outline-3">
+<h3 id="orgheadline9"></h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<p>
+<a href="https://youtu.be/8pTEmbeENF4?t=21m59s">The future of Programing</a>
+</p>
+<article class="flexbox vcenter">
+
+<div class="figure">
+<p><img src="images/sec_to_concu.png" alt="sec_to_concu.png" width="700px" />
+</p>
+</div>
+</article>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline10" class="outline-3">
+<h3 id="orgheadline10"></h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="smaller" id="text-">
+<p>
+Secuencia de instrucciónes paso a paso
+</p>
+<article class="flexbox vcenter">
+
+<div class="figure">
+<p><img src="images/neumann.png" alt="neumann.png" width="700px" />
+</p>
+</div>
+</article>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline11" class="outline-3">
+<h3 id="orgheadline11"></h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<article class="flexbox vcenter">
+
+<div class="figure">
+<p><img src="images/array_processor.png" alt="array_processor.png" width="700px" />
+</p>
+</div>
+</article>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline12" class="outline-3">
+<h3 id="orgheadline12"></h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="smaller" id="text-">
+<p>
+<a href="https://youtu.be/xoNRtWl4fZU?t=4m44s">Processing 2.7 million images with Elixir (vs Ruby) by David Padilla</a>
+</p>
+<article class="flexbox vcenter">
+
+<div class="figure">
+<p><img src="images/ruby_process.png" alt="ruby_process.png" width="700px" />
+</p>
+</div>
+</article>
+
+
+</article>
+
+</slide>
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline13" class="outline-3">
+<h3 id="orgheadline13"></h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<article class="flexbox vcenter">
+
+<div class="figure">
+<p><img src="images/ruby_results.png" alt="ruby_results.png" width="700px" />
+</p>
+</div>
+</article>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline14" class="outline-3">
+<h3 id="orgheadline14">Video Recomendado</h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="smaller" id="text-">
+<p>
+<a href="https://youtu.be/lKXe3HUG2l4">"The Mess We're In" by Joe Armstrong</a>
+</p>
+<article class="flexbox vcenter">
+
+<div class="figure">
+<p><img src="images/joe.png" alt="joe.png" width="700px" />
+</p>
+</div>
+</article>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline15" class="outline-3">
+<h3 id="orgheadline15"></h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="smaller" id="text-">
+<p>
+Programar no es una actividad convencional, es una actividad creativa!!! Debes sentirte como hacer esta obra de arte.
+</p>
+<article class="flexbox vcenter">
+
+<div class="figure">
+<p><img src="images/escuela_de_atenas.jpg" alt="escuela_de_atenas.jpg" width="650px" />
+</p>
+</div>
+</article>
+
+
+</article>
+
+</slide>
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline16" class="outline-3">
+<h3 id="orgheadline16"></h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="smaller" id="text-">
+<p>
+Pero muchas veces tienes que hacer esto
+</p>
+<article class="flexbox vcenter">
+
+<div class="figure">
+<p><img src="images/pintor.png" alt="pintor.png" width="400px" />
+</p>
+</div>
+</article>
+
+
+</article>
+
+</slide>
+
+</slide>
+
+</slide>
+<slide id="sec-" class=" segue dark quote nobackground" style="background-image: url(nil)">
+<aside class="gdbar right bottom"><img src="images/elixir.png"></aside><hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline19" class="outline-2">
+<h2 id="orgheadline19">Qué paso?</h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="flexbox vleft auto-fadein" id="text-">
+
+
+</article>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline18" class="outline-3">
+<h3 id="orgheadline18"></h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<p>
+Cuando se empezo a hacer programación nadie sabia que era realmente programación. 
+</p>
+
+<p>
+-&gt; Uno no estaba limitado a una idea bien definida. El resultado fueron grandes avances. 
+</p>
+
+<p>
+-&gt; Ahora la gente te dice que es programación y eso limita el desarrollo y la investigación.
+</p>
+
+
+</article>
+
+</slide>
+
+</slide>
+
+</slide>
+<slide id="sec-" class=" segue dark quote nobackground" style="background-image: url(nil)">
+<aside class="gdbar right bottom"><img src="images/elixir.png"></aside><hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline20" class="outline-2">
+<h2 id="orgheadline20">Vuestro compromiso</h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="flexbox vleft auto-fadein" id="text-">
+<p>
+<a href="https://youtu.be/6NbclBWd8AM?t=48m52s">Vacear la copa</a>
+</p>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-" class=" segue dark quote nobackground" style="background-image: url(nil)">
+<aside class="gdbar right bottom"><img src="images/elixir.png"></aside><hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline25" class="outline-2">
+<h2 id="orgheadline25">Erlang y Elixir</h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="flexbox vleft auto-fadein" id="text-">
+
+
+</article>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline21" class="outline-3">
+<h3 id="orgheadline21"><a href="https://youtu.be/xrIjfIjssLE">Erlang The Movie - 1986</a></h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="smaller" id="text-">
+<article class="flexbox vcenter">
+
+<div class="figure">
+<p><img src="images/erlang_the_movie.jpg" alt="erlang_the_movie.jpg" width="300px" />
+</p>
+</div>
+</article>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline22" class="outline-3">
+<h3 id="orgheadline22">Jose Valim</h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="smaller" id="text-">
+<article class="flexbox vcenter">
+
+<div class="figure">
+<p><img src="images/jose_valim.jpg" alt="jose_valim.jpg" width="350px" />
+</p>
+</div>
+</article>
+<blockquote>
+<p>
+一I loved everything I saw in Erlang, but I hated the things I didn't see.
+</p>
+
+<p>
+<span class='float-right'>&#x2013; José Valim</span><br  />
+</p>
+</blockquote>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline23" class="outline-3">
+<h3 id="orgheadline23">Erlang + Ruby</h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<article class="flexbox vcenter">
+
+<div class="figure">
+<p><img src="images/pineapple_pen.gif" alt="pineapple_pen.gif" width="700px" />
+</p>
+</div>
+</article>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline24" class="outline-3">
+<h3 id="orgheadline24"></h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<article class="flexbox vcenter">
+
+<div class="figure">
+<p><img src="images/ruby_erlang_elixir.png" alt="ruby_erlang_elixir.png" width="500px" />
+</p>
+</div>
+</article>
+
+
+</article>
+
+</slide>
+
+</slide>
+
+</slide>
+<slide id="sec-" class=" segue dark quote nobackground" style="background-image: url(nil)">
+<aside class="gdbar right bottom"><img src="images/elixir.png"></aside><hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline34" class="outline-2">
+<h2 id="orgheadline34">Programación Funcional</h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="flexbox vleft auto-fadein" id="text-">
+
+
+</article>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline26" class="outline-3">
+<h3 id="orgheadline26"><a href="https://youtu.be/YU2i3L-euB0?t=7m55s">Oulipo</a></h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="smaller" id="text-">
+<article class="flexbox vcenter">
+
+<div class="figure">
+<p><img src="images/oulipo.png" alt="oulipo.png" width="550px" />
+</p>
+</div>
+</article>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline27" class="outline-3">
+<h3 id="orgheadline27"></h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<article class="flexbox vcenter">
+
+<div class="figure">
+<p><img src="images/oulipo-ej.png" alt="oulipo-ej.png" width="650px" />
+</p>
+</div>
+</article>
+
+
+</article>
+
+</slide>
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline28" class="outline-3">
+<h3 id="orgheadline28"></h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<article class="flexbox vcenter">
+
+<div class="figure">
+<p><img src="images/ouprogpo.png" alt="ouprogpo.png" width="650px" />
+</p>
+</div>
+</article>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline29" class="outline-3">
+<h3 id="orgheadline29">Ouprogpro</h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="smaller" id="text-">
+<p>
+Diseña un programa X con las restricciones:
+</p>
+<ul>
+<li>No puedes usar bucles</li>
+<li>Todas las funciones tienen un único parámetro</li>
+<li>Cada función consta de una sola expresión</li>
+<li>NO hay efectos secundarios</li>
+<li>Una vez se asigna un valor a un identificador, no se puede modificar</li>
+<li>Las operaciones sobre estructuras de datos son no destructivas.</li>
+<li>El orden de ejecución no importa</li>
+<li>Tipado estatico (obliga a definir desde el principio el tipo de una variable)</li>
+</ul>
+<p>
+<code>Esto es programación Funcional</code>
+</p>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-" class="fill white nobackground" style="background-image: url(images/meme.jpg)">
+<hgroup class="">
+       <h2 class="white "><div id="outline-container-orgheadline30" class="outline-3">
+<h3 id="orgheadline30"></h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-" class="fill white nobackground" style="background-image: url(images/necesidad.png)">
+<hgroup class="">
+       <h2 class="white "><div id="outline-container-orgheadline31" class="outline-3">
+<h3 id="orgheadline31">Necesidad</h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-" class="fill white nobackground" style="background-image: url(images/scala.png)">
+<hgroup class="">
+       <h2 class="white "><div id="outline-container-orgheadline32" class="outline-3">
+<h3 id="orgheadline32"></h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-" class="fill white nobackground" style="background-image: url(images/time.png)">
+<hgroup class="">
+       <h2 class="white "><div id="outline-container-orgheadline33" class="outline-3">
+<h3 id="orgheadline33"></h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+
+
+</article>
+
+</slide>
+
+</slide>
+
+</slide>
+<slide id="sec-" class=" segue dark quote nobackground" style="background-image: url(nil)">
+<aside class="gdbar right bottom"><img src="images/elixir.png"></aside><hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline36" class="outline-2">
+<h2 id="orgheadline36">Why Functional Programming?</h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="flexbox vleft auto-fadein" id="text-">
+
+
+</article>
+
+</slide>
+<slide id="sec-" class="fill white nobackground" style="background-image: url(images/modelo-actor.png)">
+<hgroup class="">
+       <h2 class="white "><div id="outline-container-orgheadline35" class="outline-3">
+<h3 id="orgheadline35"></h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+
+
+</article>
+
+</slide>
+
+</slide>
+
+</slide>
+<slide id="sec-" class=" segue dark quote nobackground" style="background-image: url(nil)">
+<aside class="gdbar right bottom"><img src="images/elixir.png"></aside><hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline42" class="outline-2">
+<h2 id="orgheadline42">Elixir &lt;3</h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="flexbox vleft auto-fadein" id="text-">
+
+
+</article>
+
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline37" class="outline-3">
+<h3 id="orgheadline37">Erlang y Elixir</h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<article class="flexbox vcenter">
+
+<div class="figure">
+<p><img src="images/erlang_elixir.png" alt="erlang_elixir.png" width="650px" />
+</p>
+</div>
+</article>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline38" class="outline-3">
+<h3 id="orgheadline38">Caracteristicas</h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="smaller" id="text-">
+<ul>
+<li><code>Concurrente</code>: Procesos de un computo se hacen simultaneamente.</li>
+<li><code>Tolerante a fallos</code>: Recuperar se bugs automaticamente.</li>
+<li><code>Alta Disponibilidad</code>: Que no se caiga todo el sistema a menos que seas claro o movistar. Ellos con que trabajaran.</li>
+<li>Compilado: El codigo que escribes se convierte en otra forma antes de ejecutarse en el cpu (Evita errores y optimiza)</li>
+<li>Estados Inmutables: Una vez creado un elemento no se puede modificar.</li>
+</ul>
+
+
+</article>
+
+</slide>
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline39" class="outline-3">
+<h3 id="orgheadline39">Caracteristicas</h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="smaller" id="text-">
+<ul>
+<li>Funcional: Pensar en programación como transformaciones dentro de un proceso.</li>
+<li>Proceso es la basica abstraccion: Super sencillo, similar en dificultad en cuanto a crear objetos en otros lenguajes.</li>
+<li>Los procesos no comparten memoria y se comunican solo por mensajes (Modelo Actor)</li>
+<li>Monitoreo de procesos con reinicio automatico.</li>
+<li>Computación distribuida: No importa si los procesos estan en una misma maquina, solo importa que se comuniquen.</li>
+</ul>
+<p>
+<code>Confiabilidad: 99.9999999%  equivalente a 1 segundo de inactividad cada 32 años.</code>
+</p>
+
+
+</article>
+
+</slide>
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline40" class="outline-3">
+<h3 id="orgheadline40">Como funciona</h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="smaller" id="text-">
+<p>
+Los procesos en Elixir es diferente a procesos nativos (procesos del sistemas operativo)
+</p>
+<div class="org-src-container">
+
+<pre class="prettyprint" data-lang="markdown">
++---------------------------------------+
+|       Codigo Erlang o Elixir          | &lt;--- Codigo desarrollado 
++---------------------------------------+
+                   |
+         Erlang Compiler / HiPE
+                   |
++---------------------------------------+
+|            .beam Bytecode             |
++---------------------------------------+
+                   |
+          BEAM Virtual Machine            &lt;--- Interpreta bytecode
+                   |
++---------------------------------------+
+|            Codigo Nativo              | &lt;--- Codifica los procesos del CPU
++---------------------------------------+
+</pre>
+
+</div>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline41" class="outline-3">
+<h3 id="orgheadline41">Caracteristica que hacen destacar a Elixir sobre Erlang</h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<ul>
+<li><code>Metaprogramación</code>: En Erlang no se puede extender el lenguajes a otros dominios y dificil de limpiar el codigo repetitivo. En Elixir tenemos las <code>macros</code></li>
+</ul>
+
+
+<ul>
+<li><code>Polymorfismo</code>: En Erlang si querias extender una libreria, la unica opción es hacerle un fork. En elixir tenemos los <code>protocolos</code>.</li>
+
+<li>Y por sobre todo, podemos llamar a librerias Erlang desde Elixir sin complicación.</li>
+</ul>
+
+
+</article>
+
+</slide>
+
+</slide>
+
+</slide>
+<slide id="sec-" class=" segue dark quote nobackground" style="background-image: url(nil)">
+<aside class="gdbar right bottom"><img src="images/elixir.png"></aside><hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline46" class="outline-2">
+<h2 id="orgheadline46">Aplicaciones de Elixir</h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="flexbox vleft auto-fadein" id="text-">
+
+
+</article>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline43" class="outline-3">
+<h3 id="orgheadline43">Phoenix</h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<article class="flexbox vcenter">
+
+<div class="figure">
+<p><img src="images/phoenixframework.png" alt="phoenixframework.png" width="500px" />
+</p>
+</div>
+</article>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline44" class="outline-3">
+<h3 id="orgheadline44">Nerves</h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<article class="flexbox vcenter">
+
+<div class="figure">
+<p><img src="images/nerves.png" alt="nerves.png" width="500px" />
+</p>
+</div>
+</article>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline45" class="outline-3">
+<h3 id="orgheadline45">Redes Neuronales</h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<p>
+<a href="http://www.cabafx.com/trading-ebooks-collection/newpdf/Handbook%20of%20Neuroevolution%20Through%20Erlang.pdf">Handbook of Neuroevolution Through Erlang</a>
+</p>
+<article class="flexbox vcenter">
+
+<div class="figure">
+<p><img src="images/Handbook.jpg" alt="Handbook.jpg" width="200px" />
+</p>
+</div>
+</article>
+
+
+</article>
+
+</slide>
+
+</slide>
+
+</slide>
+<slide id="sec-" class=" segue dark quote nobackground" style="background-image: url(nil)">
+<aside class="gdbar right bottom"><img src="images/elixir.png"></aside><hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline47" class="outline-2">
+<h2 id="orgheadline47">Lets Start</h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="flexbox vleft auto-fadein" id="text-">
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-" class=" segue dark quote nobackground" style="background-image: url(nil)">
+<aside class="gdbar right bottom"><img src="images/elixir.png"></aside><hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline62" class="outline-2">
+<h2 id="orgheadline62">Tipos Basicos</h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="flexbox vleft auto-fadein" id="text-">
+
+
+</article>
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline48" class="outline-3">
+<h3 id="orgheadline48">Numeros</h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<p>
+Integers: Pueden ser escritos en base diez (1234), hexagesimal (0xcafe), octal (0o765) y binario (0b1010).
+</p>
+
+<p>
+Numeros con punto flotante: al menos un digito antes y despues del punto, opcionalmente pueden agregarse exponente:
+</p>
+
+<p>
+<code>1.0</code>
+<code>0.2456</code>
+<code>0.314159e1</code>
+<code>314159.0e-5</code>
+</p>
+
+
+</article>
+
+</slide>
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline49" class="outline-3">
+<h3 id="orgheadline49">Atomos</h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<p>
+Atomos son constantes que representan el nombre de algo. Escritos con <code>:</code> como primer caracter
+</p>
+
+<p>
+Ejemplos:
+</p>
+<div class="org-src-container">
+
+<pre class="prettyprint" data-lang="elixir">
+:esto_es_un_atomo
+:"Un atomo con espacios"
+true == :true
+false == :false
+nil == :nil
+Enum == :enum  #Nombre de modulos son atomos
+</pre>
+
+</div>
+
+
+</article>
+
+</slide>
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline50" class="outline-3">
+<h3 id="orgheadline50">Binarios</h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<p>
+Escrito como: <code>&lt;&lt;byte, byte, ...&gt;&gt;</code>
+</p>
+
+<p>
+Ejemplo:
+</p>
+<div class="org-src-container">
+
+<pre class="prettyprint" data-lang="elixir">
+iex&gt; &lt;&lt;97, 109, 105, 103, 117, 105, 116, 111&gt;&gt;
+
+#Que por ASCII[fn:1] tambien puede ser escrito como:
+"amiguito"
+</pre>
+
+</div>
+
+
+</article>
+
+</slide>
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline51" class="outline-3">
+<h3 id="orgheadline51">Strings</h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<p>
+"Hola Amiguitos"
+</p>
+
+<p>
+Ejemplos:
+</p>
+<div class="org-src-container">
+
+<pre class="prettyprint" data-lang="elixir">
+# Strings son binarios
+"amiguito" == &lt;&lt;97, 109, 105, 103, 117, 105, 116, 111&gt;&gt;
+
+"""
+Esto es un string multilinea.
+Usado para documentación.
+"""
+</pre>
+
+</div>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline52" class="outline-3">
+<h3 id="orgheadline52">Maps</h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<p>
+%{llave: valor, &#x2026;}
+</p>
+
+<p>
+Ejemplos:
+</p>
+<div class="org-src-container">
+
+<pre class="prettyprint" data-lang="elixir">
+iex&gt; persona = %{
+...&gt;   nombre: "Albert",
+...&gt;   apellidos: "Castellano Moreno"
+...&gt;}
+
+iex&gt; persona.nombre 
+"Albert"
+iex&gt; persona[:nombre] 
+"Albert"
+</pre>
+
+</div>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline53" class="outline-3">
+<h3 id="orgheadline53">Tuplas</h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<p>
+{valor, valor, &#x2026;}
+</p>
+
+<p>
+Ejemplos:
+</p>
+<div class="org-src-container">
+
+<pre class="prettyprint" data-lang="elixir">
+iex&gt;respuesta = {:ok, "Texto Resultado"} 
+iex&gt;elem(respuesta, 0) # =&gt; :ok
+iex&gt;elem(respuesta, 1) # =&gt; "Texto Resultado"
+</pre>
+
+</div>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline54" class="outline-3">
+<h3 id="orgheadline54">Listas</h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<p>
+[valor, valor, &#x2026;]
+</p>
+
+<p>
+Ejemplos:
+</p>
+<div class="org-src-container">
+
+<pre class="prettyprint" data-lang="elixir">
+iex&gt; edades = = [42, 31, 24]
+iex&gt; Enum.at(edades, 1) # =&gt; 31
+</pre>
+
+</div>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline55" class="outline-3">
+<h3 id="orgheadline55">Implementación de Listas</h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<p>
+Las listas en Elixir pueden ser vacias ó pares inmutables <code>head/tail</code> 
+</p>
+
+<p>
+donde el <code>head</code> contiene un valor y el <code>tail</code> es en si misma una lista
+</p>
+
+<p>
+Ejemplos:
+</p>
+<div class="org-src-container">
+
+<pre class="prettyprint" data-lang="elixir">
+iex&gt; [ head | tail ] = [ 1, 2, 3 ] # =&gt; [1, 2, 3]
+iex&gt; head 
+1
+iex&gt; tail 
+[2, 3]
+</pre>
+
+</div>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline56" class="outline-3">
+<h3 id="orgheadline56">Prepending en listas es <code>Rapido</code></h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<div class="org-src-container">
+
+<pre class="prettyprint" data-lang="elixir">
+iex&gt; list1 = [1, 2, 3]
+iex&gt; list2 = [0 | list1]
+</pre>
+
+</div>
+<article class="flexbox vcenter">
+
+<div class="figure">
+<p><img src="images/prepending.png" alt="prepending.png" width="700px" />
+</p>
+</div>
+</article>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline57" class="outline-3">
+<h3 id="orgheadline57">Appending en listas es <code>Lento</code></h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<div class="org-src-container">
+
+<pre class="prettyprint" data-lang="elixir">
+iex&gt; list1 = [1, 2, 3]
+iex&gt; list2 = list1 ++ [4]
+</pre>
+
+</div>
+<article class="flexbox vcenter">
+
+<div class="figure">
+<p><img src="images/appending.png" alt="appending.png" width="700px" />
+</p>
+</div>
+</article>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline58" class="outline-3">
+<h3 id="orgheadline58">Insertar elementos es <code>Lento</code></h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<div class="org-src-container">
+
+<pre class="prettyprint" data-lang="elixir">
+iex&gt; list1 = [1, 3, 4]
+iex&gt; list2 = List.insert_at(list1, 1, 2) # insertando 2 en la segunda posicion
+iex&gt; [1, 2, 3, 4]
+</pre>
+
+</div>
+<article class="flexbox vcenter">
+
+<div class="figure">
+<p><img src="images/insert_list.png" alt="insert_list.png" width="700px" />
+</p>
+</div>
+</article>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline59" class="outline-3">
+<h3 id="orgheadline59">Implementación de Listas</h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<ul>
+<li>Elixir son pares head/tail</li>
+<li>Inmutabilidad hacen que sean eficientes en memoria</li>
+<li>Prepending es RAPIDO</li>
+<li>Appending es LENTO</li>
+<li>Insertando elementos puede ser lento</li>
+<li>Leer la lista entera puede ser lento</li>
+</ul>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline60" class="outline-3">
+<h3 id="orgheadline60">Lista de Caracteres</h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<p>
+[integer, integer, &#x2026;]
+</p>
+
+<p>
+Ejemplos:
+</p>
+<div class="org-src-container">
+
+<pre class="prettyprint" data-lang="elixir">
+#Notacion corta
+iex&gt; 'amiguito'
+iex&gt; [97, 109, 105, 103, 117, 105, 116, 111&gt;]
+</pre>
+
+</div>
+
+<p>
+Usalo solo cuando quieras trabajar con una libreria de Erlang, se explicara despues
+</p>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline61" class="outline-3">
+<h3 id="orgheadline61">Otros Tipos Basicos</h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<ul>
+<li>PIDs</li>
+<li>References</li>
+<li>Records</li>
+<li>Port references</li>
+</ul>
+
+
+</article>
+
+</slide>
+
+</slide>
+
+</slide>
+<slide id="sec-" class=" segue dark quote nobackground" style="background-image: url(nil)">
+<aside class="gdbar right bottom"><img src="images/elixir.png"></aside><hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline68" class="outline-2">
+<h2 id="orgheadline68">Tipos Compuestos</h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="flexbox vleft auto-fadein" id="text-">
+
+
+</article>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline63" class="outline-3">
+<h3 id="orgheadline63">Keyword Lists</h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<p>
+[{:atomo, valor}, &#x2026;]
+</p>
+
+<p>
+Ejemplos:
+</p>
+<div class="org-src-container">
+
+<pre class="prettyprint" data-lang="elixir">
+#Notacion corta
+iex&gt; persona = [nombre: "Albert",
+...&gt; apellidos: "Castellano Moreno"]
+#Equivalente a [{:nombre, "ALbert"}, {:apellidos, "Castellano Moreno"}]
+#Para acceder a un valor se usa
+iex&gt; persona[:nombre] 
+iex&gt; persona[:apellidos]
+</pre>
+
+</div>
+
+
+</article>
+
+</slide>
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline64" class="outline-3">
+<h3 id="orgheadline64">Estructuras</h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<p>
+<code>%{__struct__: ModuleName, ...}</code>
+</p>
+
+<p>
+Ejemplos:
+</p>
+<div class="org-src-container">
+
+<pre class="prettyprint" data-lang="elixir">
+#Notacion corta
+%Session{titulo: "Holi", autor: "amiguito"}
+#Interna Representación
+%{__struct__:, Session,titulo: "Holi", autor: "amiguito"}
+</pre>
+
+</div>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline65" class="outline-3">
+<h3 id="orgheadline65">Rangos</h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<p>
+<code>%Range{first: number, last: number}</code>
+</p>
+
+<p>
+Ejemplos:
+</p>
+<div class="org-src-container">
+
+<pre class="prettyprint" data-lang="elixir">
+#Notacion corta
+iex&gt; 0..100
+
+#Interna Representación
+%Range{first: 0, last: 100}
+</pre>
+
+</div>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline66" class="outline-3">
+<h3 id="orgheadline66">Expresiones Regulares</h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<p>
+<code>%Regex{opts: ..., re_pattern: ...}</code>
+</p>
+
+<p>
+Ejemplos:
+</p>
+<div class="org-src-container">
+
+<pre class="prettyprint" data-lang="elixir">
+#Notacion corta
+iex&gt; ~r/holi, soy un texto/
+
+#Interna Representación
+%Regex{
+  opts: "",
+  re_pattern: {:re_pattern, &lt;&lt;69, 82, 67, 80, 81, 0, ...&gt;&gt;},
+  source: "holi, soy un texto"
+}
+</pre>
+
+</div>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline67" class="outline-3">
+<h3 id="orgheadline67">Otros Tipos Compuestos</h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<ul>
+<li>Tasks</li>
+<li>Agents</li>
+<li>Streams</li>
+<li>HashDicts</li>
+<li>HashSets</li>
+</ul>
+
+
+</article>
+
+</slide>
+
+</slide>
+
+</slide>
+<slide id="sec-" class=" segue dark quote nobackground" style="background-image: url(nil)">
+<aside class="gdbar right bottom"><img src="images/elixir.png"></aside><hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline71" class="outline-2">
+<h2 id="orgheadline71">Operadores</h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="flexbox vleft auto-fadein" id="text-">
+
+
+</article>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline69" class="outline-3">
+<h3 id="orgheadline69">Contenido</h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<ul>
+<li>Qué son los Operadores?</li>
+<li>Operador Match</li>
+<li>Operadores Matematicos</li>
+<li>Comparadores</li>
+</ul>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline70" class="outline-3">
+<h3 id="orgheadline70">Qué son los Operadores?</h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<blockquote>
+<p>
+一Operators can be seen as a special form of function with different calling notation and a limited number of parameters.
+</p>
+
+<p>
+<span class='float-right'>&#x2013; Wikipedia</span><br  />
+</p>
+</blockquote>
+
+
+</article>
+
+</slide>
+
+</slide>
+
+</slide>
+<slide id="sec-" class=" segue dark quote nobackground" style="background-image: url(nil)">
+<aside class="gdbar right bottom"><img src="images/elixir.png"></aside><hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline72" class="outline-2">
+<h2 id="orgheadline72">func(left, right)</h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="flexbox vleft auto-fadein" id="text-">
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-" class=" segue dark quote nobackground" style="background-image: url(nil)">
+<aside class="gdbar right bottom"><img src="images/elixir.png"></aside><hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline73" class="outline-2">
+<h2 id="orgheadline73">left &lt;func&gt; right</h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="flexbox vleft auto-fadein" id="text-">
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-" class=" segue dark quote nobackground" style="background-image: url(nil)">
+<aside class="gdbar right bottom"><img src="images/elixir.png"></aside><hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline74" class="outline-2">
+<h2 id="orgheadline74">Operador Match</h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="flexbox vleft auto-fadein" id="text-">
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-" class=" segue dark quote nobackground" style="background-image: url(nil)">
+<aside class="gdbar right bottom"><img src="images/elixir.png"></aside><hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline84" class="outline-2">
+<h2 id="orgheadline84">patron = data</h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="flexbox vleft auto-fadein" id="text-">
+
+
+</article>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline75" class="outline-3">
+<h3 id="orgheadline75">Operador Match</h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<div class="org-src-container">
+
+<pre class="prettyprint" data-lang="elixir">
+iex&gt; nombre = "Albert"
+"Albert"
+iex&gt; edad  = 24
+24
+</pre>
+
+</div>
+
+
+</article>
+
+</slide>
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline76" class="outline-3">
+<h3 id="orgheadline76">Operador Match</h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<p>
+El nombre de las variables pueden reenlazarse.
+</p>
+
+<p>
+Ejemplo:
+</p>
+<div class="org-src-container">
+
+<pre class="prettyprint" data-lang="elixir">
+iex&gt; nombre = "Albert"
+"Albert"
+iex&gt; nombre = "Amiguito"
+"Amiguito"
+</pre>
+
+</div>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline77" class="outline-3">
+<h3 id="orgheadline77">Operador Match</h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<p>
+Patrones complejos y multipartes puede ser usadas
+</p>
+
+<p>
+Ejemplo:
+</p>
+<div class="org-src-container">
+
+<pre class="prettyprint" data-lang="elixir">
+iex&gt; {nombre, edad} = {"Albert", 24}
+{"Albert", 24}
+iex&gt; nombre
+"Albert"
+iex&gt; edad
+24
+</pre>
+
+</div>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline78" class="outline-3">
+<h3 id="orgheadline78">Operador Match</h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<p>
+Variables solo pueden enlazar una vez por match.
+</p>
+
+<p>
+Ejemplo:
+</p>
+<div class="org-src-container">
+
+<pre class="prettyprint" data-lang="elixir">
+#Contrajemplo
+iex&gt; {edad, edad} = {23, 24}
+(MatchError) no match of right hand side value: {23, 24}
+</pre>
+
+</div>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline79" class="outline-3">
+<h3 id="orgheadline79">Operador Match</h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<p>
+Usamos <code>_</code> para ignorar elementos en un match.
+</p>
+
+<p>
+Ejemplo:
+</p>
+<div class="org-src-container">
+
+<pre class="prettyprint" data-lang="elixir">
+iex&gt; {nombre, _} = {"Albert", 24}
+{"Albert", 24}
+iex&gt; nombre
+"Albert"
+#Tambien puedo usar la siguiente forma solo por un tema de doocumentación
+iex&gt; {nombre, _edad} = {"Albert", 24}
+{"Albert", 24}
+iex&gt; edad
+warning: ...........
+</pre>
+
+</div>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline80" class="outline-3">
+<h3 id="orgheadline80">Operador Match</h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<p>
+Usamos el operador match para hacer una afirmación
+</p>
+
+<p>
+Ejemplo:
+</p>
+<div class="org-src-container">
+
+<pre class="prettyprint" data-lang="elixir">
+iex&gt; {"Albert", edad} = {"Albert", 24}
+{"Albert", 24}
+iex&gt; edad
+24
+
+iex&gt; {"Amiguito", edad} = {"Albert", 24}
+(MatchError) no match of right hand side value:
+</pre>
+
+</div>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline81" class="outline-3">
+<h3 id="orgheadline81">Operador Match</h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<p>
+Usamos <code>^</code> cuando queremos usar el valor de las variables en el lado del patron.
+</p>
+
+<p>
+Ejemplo:
+</p>
+<div class="org-src-container">
+
+<pre class="prettyprint" data-lang="elixir">
+iex&gt; nombre = "Albert"
+"Albert"
+iex&gt; {^nombre, edad} = {"Albert", 24}
+{"Albert", 24}
+iex&gt; edad
+24
+</pre>
+
+</div>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline82" class="outline-3">
+<h3 id="orgheadline82">Operador Match</h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<p>
+Todos los Tipos de datos en Elixir pueden ser matcheados.
+</p>
+
+<p>
+Ejemplo:
+</p>
+<div class="org-src-container">
+
+<pre class="prettyprint" data-lang="elixir">
+#Mapas
+iex&gt; %{nombre: nombre, edad: edad} = %{nombre: "Albert", edad: 24}
+#Estructuras
+iex&gt; %Persona{} = %Persona{nombre: "Albert", edad: 24}
+{"Albert", 24}
+#Binarios
+iex&gt; "Hola " &lt;&gt; palabra = "Hola Mundo"
+"Hola Mundo"
+iex&gt; palabra
+mundo
+</pre>
+
+</div>
+
+
+</article>
+
+</slide>
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline83" class="outline-3">
+<h3 id="orgheadline83">Operadores Matematicos</h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<div class="org-src-container">
+
+<pre class="prettyprint" data-lang="elixir">
+iex&gt; 1 + 1
+2
+iex&gt; 5 - 2
+3
+iex&gt; 15 / 3
+5.0
+iex&gt; 3 * 5
+15
+</pre>
+
+</div>
+
+
+</article>
+
+</slide>
+
+</slide>
+</slide>
+<slide id="sec-" class=" segue dark quote nobackground" style="background-image: url(nil)">
+<aside class="gdbar right bottom"><img src="images/elixir.png"></aside><hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline88" class="outline-2">
+<h2 id="orgheadline88">Comparadores</h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="flexbox vleft auto-fadein" id="text-">
+
+
+</article>
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline85" class="outline-3">
+<h3 id="orgheadline85">Igualdad</h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<div class="org-src-container">
+
+<pre class="prettyprint" data-lang="elixir">
+iex&gt; "Albert" == "Albert"
+true
+iex&gt; 1 == 2
+false
+iex&gt; 1 == 1.0
+true
+iex&gt; 1 === 1.0
+false
+</pre>
+
+</div>
+
+
+</article>
+
+</slide>
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline86" class="outline-3">
+<h3 id="orgheadline86">Inegualdad: <code>!=</code> y <code>!==</code></h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<div class="org-src-container">
+
+<pre class="prettyprint" data-lang="elixir">
+iex&gt; 1 != 2
+true
+iex&gt; 1 != 1.0
+false
+iex&gt; 1 !== 1.0
+true
+</pre>
+
+</div>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline87" class="outline-3">
+<h3 id="orgheadline87">Mayor/Menor que</h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<p>
+<code>&gt;</code>, <code>&gt;=</code>, <code>&lt;</code>, <code>&lt;=</code>
+</p>
+
+<p>
+Ejemplos:
+</p>
+<div class="org-src-container">
+
+<pre class="prettyprint" data-lang="elixir">
+iex&gt; 2 &gt; 1
+true
+iex&gt; 2 &gt;= 2
+true
+iex&gt; 1 &lt; 2
+true
+iex&gt; 1 &lt;= 2
+true
+</pre>
+
+</div>
+
+
+</article>
+
+</slide>
+
+</slide>
+
+</slide>
+<slide id="sec-" class=" segue dark quote nobackground" style="background-image: url(nil)">
+<aside class="gdbar right bottom"><img src="images/elixir.png"></aside><hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline94" class="outline-2">
+<h2 id="orgheadline94">Operadores list</h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="flexbox vleft auto-fadein" id="text-">
+
+
+</article>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline89" class="outline-3">
+<h3 id="orgheadline89">Operador lista <code>in</code></h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<p>
+Verifica si un elemento esta dentro de una lista
+</p>
+
+<p>
+Ejemplos:
+</p>
+<div class="org-src-container">
+
+<pre class="prettyprint" data-lang="elixir">
+iex&gt; "amiguito" in ["albert", "amiguito", "roman", ":v"]
+true
+iex&gt; "cualquier texto" in ["albert", "amiguito", "roman", ":v"]
+true
+</pre>
+
+</div>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline90" class="outline-3">
+<h3 id="orgheadline90">Operador lista <code>++</code></h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<p>
+Combina 2 listas
+Ejemplos:
+</p>
+<div class="org-src-container">
+
+<pre class="prettyprint" data-lang="elixir">
+iex(1)&gt; [1, 2] ++ [2, 3]
+[1, 2, 2, 3]
+</pre>
+
+</div>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline91" class="outline-3">
+<h3 id="orgheadline91">Operador lista <code>--</code></h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<p>
+Elimina elementos de una lista
+Ejemplos:
+</p>
+<div class="org-src-container">
+
+<pre class="prettyprint" data-lang="elixir">
+iex(1)&gt; [1, 2] - [2, 3]
+[1]
+</pre>
+
+</div>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline92" class="outline-3">
+<h3 id="orgheadline92">Operador lista <code>|</code></h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<p>
+Prepend a una lista
+Ejemplos:
+</p>
+<div class="org-src-container">
+
+<pre class="prettyprint" data-lang="elixir">
+iex(1)&gt; lista = [1, 2, 3]
+[1, 2, 3]
+iex(1)&gt; [0 | lista]
+[0, 1, 2, 3]
+</pre>
+
+</div>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline93" class="outline-3">
+<h3 id="orgheadline93">Operador lista <code>|</code></h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="smaller" id="text-">
+<p>
+<code>|</code> dentro de un patron en un match
+Ejemplos:
+</p>
+<div class="org-src-container">
+
+<pre class="prettyprint" data-lang="elixir">
+iex(1)&gt; [head | tail] = ["albert", "castellano", "moreno"]
+["albert", "castellano", "moreno"]
+iex(1)&gt; head
+"albert"
+iex(1)&gt; tail
+["castellano", "moreno"]
+iex&gt; [a, b, c | tail] = [0, 1, 2, 3]
+[0, 1, 2, 3]
+iex&gt; a
+0
+iex&gt; b
+1
+iex&gt; c
+2
+iex&gt; tail
+[3]
+</pre>
+
+</div>
+
+
+</article>
+
+</slide>
+
+</slide>
+
+</slide>
+<slide id="sec-" class=" segue dark quote nobackground" style="background-image: url(nil)">
+<aside class="gdbar right bottom"><img src="images/elixir.png"></aside><hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline97" class="outline-2">
+<h2 id="orgheadline97">Operadores binarios</h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="flexbox vleft auto-fadein" id="text-">
+
+
+</article>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline95" class="outline-3">
+<h3 id="orgheadline95">Concatenar texto</h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<p>
+Ejemplos:
+</p>
+<div class="org-src-container">
+
+<pre class="prettyprint" data-lang="elixir">
+iex&gt; "hola " &lt;&gt; "mundo"
+"hola mundo"
+iex&gt; "hola" &lt;&gt; text = "hola mundo"
+"hola mundo"
+iex&gt; text
+" mundo"
+[3]
+</pre>
+
+</div>
+
+
+</article>
+
+</slide>
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline96" class="outline-3">
+<h3 id="orgheadline96">Interpolar texto</h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<p>
+Interpolar valores en un texto con <code>#{}</code>
+Ejemplos:
+</p>
+<div class="org-src-container">
+
+<pre class="prettyprint" data-lang="elixir">
+iex&gt; "Uno más dos es: #{1 + 2}"
+"Uno más dos es: 3"
+iex&gt; saludo = "Amiguito"
+"Amiguito"
+iex&gt; "Holi Woli, #{saludo}"
+"Holi Woli, Amiguito"
+[3]
+</pre>
+
+</div>
+
+
+</article>
+
+</slide>
+
+</slide>
+
+</slide>
+<slide id="sec-" class=" segue dark quote nobackground" style="background-image: url(nil)">
+<aside class="gdbar right bottom"><img src="images/elixir.png"></aside><hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline100" class="outline-2">
+<h2 id="orgheadline100">Operadores logicos</h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="flexbox vleft auto-fadein" id="text-">
+
+
+</article>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline98" class="outline-3">
+<h3 id="orgheadline98">Operaciones Booleanas</h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<p>
+Esperan solo <code>true</code>, <code>false</code>. Estos operadores son: <code>and</code>, <code>or</code> y <code>not</code>
+Ejemplos:
+</p>
+<div class="org-src-container">
+
+<pre class="prettyprint" data-lang="elixir">
+iex&gt; true and true
+tue
+iex&gt; true or false
+true
+iex&gt; not true
+false
+</pre>
+
+</div>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgheadline99" class="outline-3">
+<h3 id="orgheadline99">Operadores booleanos relajados</h3>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="smaller" id="text-">
+<p>
+<code>nil</code> y <code>false</code> son conciderados como <code>false</code>. Todos los demas son conciderados como <code>true</code>. Estos operadores son:
+</p>
+<ul>
+<li><code>||</code>: Retorna el primer valor siempre que este sea equivalente a true, caso contraro el segundo</li>
+<li><code>&amp;&amp;</code>: Retorna el segundo valor siempre que este sea equivalente a true, caso contraro el primero</li>
+<li><code>!</code>: Retorna <code>false</code> si el parametros es equivalente a true, caso contratio retornara <code>true</code></li>
+</ul>
+<div class="org-src-container">
+
+<pre class="prettyprint" data-lang="elixir">
+iex&gt; "albert" || "castellano"
+"albert"
+iex&gt; false || "castellano"
+"castellano"
+iex&gt; "albert" &amp;&amp; "castellano"
+"castellano"
+iex&gt; "albert" &amp;&amp; false
+"albert"
+iex&gt; !"albert"
+false
+</pre>
+
+</div>
+
+
+</article>
+
+</slide>
+
+</slide>
+</slide>
+<slide id="sec-" class=" thank-you-slide segue nobackground" style="background-image: url(nil)">
+<aside class="gdbar right"><img src="images/elixir.png"></aside><article class="flexbox vleft auto-fadein" id="text-">
+<h2>
+  <p>Gracias ˊ・ω・ˋ</p>
+</h2>
+<br>
+<p class="auto-fadein" data-config-contact>
+</p>
+</article>
+
+</slide>
+<slide class="backdrop"></slide>
+</slides> 
+<!--[if IE]>
+  <script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+  <script>CFInstall.check({mode: 'overlay'});</script>
+<![endif]-->
+</body> 
+
+</html>
